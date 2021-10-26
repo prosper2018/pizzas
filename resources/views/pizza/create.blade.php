@@ -18,6 +18,16 @@
             <div class="card">
                 <div class="card-header">{{ __('Pizza') }}</div>
 
+                @if (count($errors)>0)
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                    @endforeach
+                </div>    
+                @endif
+                <form action="{{ route('pizza.store') }}" method="POST">
+                    @csrf
+
                 <div class="card-body">
                     <div class="form-group">
                         <label for="name">Name of Pizza</label>
@@ -29,13 +39,13 @@
                     </div>
                     <div class="form-inline">
                         <label>Price(s)</label>
-                        <input type="number" class="form-control" placeholder="small pizza price">
-                        <input type="number" class="form-control" placeholder="medium pizza price">
-                        <input type="number" class="form-control" placeholder="large pizza price">
+                        <input type="number" name="small_pizza_price" class="form-control" placeholder="small pizza price">
+                        <input type="number" name="medium_pizza_price" class="form-control" placeholder="medium pizza price">
+                        <input type="number" name="large_pizza_price" class="form-control" placeholder="large pizza price">
                     </div>
                     <div class="form-group">
                         <label for="category">Category of Pizza</label>
-                        <select class="form-control">
+                        <select class="form-control" name="category">
                             <option value=""></option>
                             <option value="vegetarian">Vegetarian Pizza</option>
                             <option value="nonvegetarian">Non Vegetarian Pizza</option>
@@ -50,6 +60,7 @@
                         <button class="btn btn-primary" type="submit">Save</button>
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </div>

@@ -33,6 +33,7 @@
                           </tr>
                         </thead>
                         <tbody>
+                        @if (count($orders)>0)
                         @foreach ($orders as $order)
 
                           <tr>
@@ -53,6 +54,9 @@
                             </form>
                           </tr>
                         @endforeach
+                        @else
+                          <p>No pizza to show</p>
+                        @endif
                         </tbody>
                       </table>
                 </div>

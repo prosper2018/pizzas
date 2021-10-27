@@ -19,6 +19,6 @@ class Admin
         if(auth()->user()->is_admin == 1){
             return $next($request);  
         }
-        return redirect('login');
+        return redirect('home');
     }
 }

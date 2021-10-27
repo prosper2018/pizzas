@@ -3,6 +3,18 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        <div class="col-md-2">
+            <div class="card">
+                <div class="card-header">{{ __('Menu') }}</div>
+                <div class="card-body">
+                   <ul class="list-group">
+                       <a href="{{ route('pizza.index') }}" class="list-group-item list-group-action">View</a>
+                       <a href="{{ route('pizza.create') }}" class="list-group-item list-group-action">Create</a>
+                       <a href="{{ route('user.order') }}" class="list-group-item list-group-action">User Order</a>
+                   </ul>
+                </div>
+            </div>
+        </div>
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('All Pizza') }}</div>
@@ -25,8 +37,8 @@
                             <th scope="col">S.price</th>
                             <th scope="col">M.price</th>
                             <th scope="col">L.price</th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Delete</th>
                           </tr>
                         </thead>
                         <tbody>

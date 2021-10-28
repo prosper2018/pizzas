@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Your Orders') }}
-                  {{-- <p style ="float: right"><a href="{{ route('pizza.create') }}">Create pizza</a><a href="{{ route('pizza.index') }}">View pizza</a></p> --}}
+                  
                 </div>                
 
                 <div class="card-body">

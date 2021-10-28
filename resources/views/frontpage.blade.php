@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                         <form action="{{ route('frontpage') }}" method="GET">
-                            <a href="/">Back</a>
+                            <a class="list-group-item list-group-action text-left" style="width: 100%;" href="/">Back</a>
                         <input type="submit" value="Vegetarian" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
                         <input type="submit" value="Nonvegetarian" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
                         <input type="submit" value="Traditional" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
@@ -20,7 +20,7 @@
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Pizza') }}</div>
+                <div class="card-header">Pizza({{ count($pizzas) }} pizza)</div>
 
                 <div class="card-body">
                     <div class="row">

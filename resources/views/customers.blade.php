@@ -12,7 +12,8 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Customers') }}
-                  <p style ="float: right"><a href="{{ route('pizza.create') }}">Create pizza</a><a href="{{ route('pizza.index') }}">View pizza</a></p>
+                  <a style ="float: right" href="{{ route('pizza.index') }}"><button class="btn btn-secondary btn-sm" style="margin-left: 5px">View pizza</button></a>
+                    <a style ="float: right" href="{{ route('pizza.create') }}"><button class="btn btn-secondary btn-sm" style="margin-left: 5px">Add new pizza</button></a>
                 </div>                
 
                 <div class="card-body">

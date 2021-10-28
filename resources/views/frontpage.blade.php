@@ -13,6 +13,13 @@
                         <input type="submit" value="Vegetarian" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
                         <input type="submit" value="Nonvegetarian" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
                         <input type="submit" value="Traditional" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Peri peri chicken" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Garlic PRAWN" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Chicken & Camembert" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Loaded pepperoni" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Spicy peppey paneer" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Spicy pepperoni" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
+                        <input type="submit" value="Vegi pepperoni" name="category" class="list-group-item list-group-action text-left" style="width: 100%;">
                         </form>
                 </div>
             </div>
